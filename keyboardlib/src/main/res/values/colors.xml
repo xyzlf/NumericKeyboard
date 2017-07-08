@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="keyboard_delete_pressed">#cccccc</drawable>
+    <drawable name="keyboard_delete_normal">#ffe8ecef</drawable>
+</resources>

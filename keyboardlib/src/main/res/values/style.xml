@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 自定义密码键盘显示退出动画 -->
+    <style name="KeyboardDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/KeyboardDialogAnim</item>
+    </style>
+
+    <style name="KeyboardDialogAnim" parent="android:Animation.Dialog">
+        <item name="@android:windowEnterAnimation">@anim/keyboard_show</item>
+        <item name="@android:windowExitAnimation">@anim/keyboard_exit</item>
+    </style>
+
+    <declare-styleable name="PasswordView">
+        <!-- 背景颜色 -->
+        <attr name="pwd_bg_color" format="color" />
+        <!-- 边框的颜色 -->
+        <attr name="pwd_board_color" format="color"/>
+        <!-- 边框的大小 -->
+        <attr name="pwd_board_size" format="dimension"/>
+        <!-- 边框圆角的大小 -->
+        <attr name="pwd_board_corner_size" format="dimension"/>
+        <!-- 分割线的颜色 -->
+        <attr name="pwd_divider_color" format="color"/>
+        <!-- 分割线的大小 -->
+        <attr name="pwd_divider_size" format="dimension"/>
+        <!-- 密码圆的颜色 -->
+        <attr name="pwd_circle_color" format="color"/>
+        <!-- 密码圆的半径 -->
+        <attr name="pwd_circle_radius" format="dimension"/>
+        <!-- 密码的个数 -->
+        <attr name="pwd_circle_count" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="KeyboardGridView">
+        <!-- 线框的粗细 -->
+        <attr name="grid_line_size" format="dimension" />
+        <!-- 线框的颜色 -->
+        <attr name="grid_line_color" format="color" />
+    </declare-styleable>
+
+</resources>
